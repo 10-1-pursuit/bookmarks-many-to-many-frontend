@@ -24,7 +24,7 @@ function ReviewForm({ reviewDetails, handleSubmit, toggleView, children }) {
 
   const onSubmit = (event) => {
     event.preventDefault();
-    handleSubmit(review, id);
+    handleSubmit(review);
     if (reviewDetails) {
       toggleView();
     }
